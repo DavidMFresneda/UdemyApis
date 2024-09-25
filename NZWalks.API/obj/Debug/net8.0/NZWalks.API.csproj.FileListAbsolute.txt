@@ -152,3 +152,6 @@ C:\Users\culai\OneDrive\Visual Studio Code\C#\NZWalks\NZWalks.API\bin\Debug\net8
 C:\Users\culai\OneDrive\Visual Studio Code\C#\NZWalks\NZWalks.API\bin\Debug\net8.0\Serilog.Sinks.Console.dll
 C:\Users\culai\OneDrive\Visual Studio Code\C#\NZWalks\NZWalks.API\bin\Debug\net8.0\Serilog.Sinks.Debug.dll
 C:\Users\culai\OneDrive\Visual Studio Code\C#\NZWalks\NZWalks.API\bin\Debug\net8.0\Serilog.Sinks.File.dll
+C:\Users\culai\OneDrive\Visual Studio Code\C#\NZWalks\NZWalks.API\obj\Debug\net8.0\NZWalks.API.sourcelink.json
+C:\Users\culai\OneDrive\Visual Studio Code\C#\NZWalks\NZWalks.API\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.Versioning.dll
+C:\Users\culai\OneDrive\Visual Studio Code\C#\NZWalks\NZWalks.API\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer.dll

@@ -15,8 +15,8 @@ namespace NZWalks.API.Controllers
 
         public WalksController(IWalkRepository walkRepository, IMapper mapper)
         {
-            this._mapper = mapper;
-            this._walkRepository = walkRepository;
+            _mapper = mapper;
+            _walkRepository = walkRepository;
         }
 
         [HttpPost]

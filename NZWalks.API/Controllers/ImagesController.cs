@@ -13,7 +13,7 @@ namespace NZWalks.API.Controllers
 
         public ImagesController(IImageRepository imageRepository)
         {
-            this._imageRepository = imageRepository;
+            _imageRepository = imageRepository;
         }
 
         // POST: api/Images/Upload

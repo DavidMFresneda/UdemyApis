@@ -1,0 +1,7 @@
+2024-09-19 07:43:28.890 +02:00 [INF] User profile is available. Using 'C:\Users\culai\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-19 07:43:29.447 +02:00 [INF] Now listening on: https://localhost:7209
+2024-09-19 07:43:29.448 +02:00 [INF] Now listening on: http://localhost:5146
+2024-09-19 07:43:29.454 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-19 07:43:29.457 +02:00 [INF] Hosting environment: Development
+2024-09-19 07:43:29.459 +02:00 [INF] Content root path: C:\Users\culai\OneDrive\Visual Studio Code\C#\NZWalks\NZWalks.API
+2024-09-19 07:43:37.949 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7209/swagger - null null

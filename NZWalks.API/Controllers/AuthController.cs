@@ -14,8 +14,8 @@ namespace NZWalks.API.Controllers
 
         public AuthController(UserManager<IdentityUser> userManager, ITokenRepository tokenRepository)
         {
-            this._userManager = userManager;
-            this._tokenRepository = tokenRepository;
+            _userManager = userManager;
+            _tokenRepository = tokenRepository;
         }
 
 
@@ -60,7 +60,7 @@ namespace NZWalks.API.Controllers
             //Mira si el usuario existe
             var user = await _userManager.FindByEmailAsync(loginRequestDto.Usuario);
 
-            if ((user != null))
+            if (user != null)
             {
                 //Checkeo de pass, devuelve true si el password es correcto
                 var checkPasswordResult = await _userManager.CheckPasswordAsync(user, loginRequestDto.Password);

@@ -1,5 +1,4 @@
 ﻿using AutoMapper;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using NZWalks.API.CustomActionFilters;
 using NZWalks.API.Models.Domain;
@@ -22,21 +21,19 @@ namespace NZWalks.API.Controllers
                                 IMapper mapper,
                                 ILogger<RegionsController> logger)
         {
-            this._regionRepository = region;
+            _regionRepository = region;
             this.mapper = mapper;
-            this._logger = logger;
+            _logger = logger;
         }
 
 
 
         [HttpGet]
-        [Authorize(Roles = "Reader")]
+        //[Authorize(Roles = "Reader")]
         public async Task<IActionResult> GetAll()
         {
 
 
-
-            throw new Exception("An error occurred while getting all regions");
 
             _logger.LogInformation("Getting all regions");
 
@@ -56,7 +53,7 @@ namespace NZWalks.API.Controllers
 
         [HttpGet]
         [Route("{regionId:Guid}")]
-        [Authorize(Roles = "Reader")]
+        //[Authorize(Roles = "Reader")]
         public async Task<IActionResult> GetRegion([FromRoute] Guid regionId)
         {
 
@@ -74,7 +71,7 @@ namespace NZWalks.API.Controllers
 
         [HttpPost]
         [ValidateModel]
-        [Authorize(Roles = "Writer")]
+        //[Authorize(Roles = "Writer")]
         public async Task<IActionResult> Create([FromBody] AddRegionRequestDto regionDto)
         {
             if (!ModelState.IsValid)
@@ -102,7 +99,7 @@ namespace NZWalks.API.Controllers
 
         [HttpPut]
         [Route("{regionId:Guid}")]
-        [Authorize(Roles = "Writer")]
+        //[Authorize(Roles = "Writer")]
         public async Task<IActionResult> Update([FromRoute] Guid regionId, [FromBody] UpdateRegionRequestDto regionDto)
         {
 
@@ -128,7 +125,7 @@ namespace NZWalks.API.Controllers
 
         [HttpDelete]
         [Route("{regionId:Guid}")]
-        [Authorize(Roles = "Writer")]
+        //[Authorize(Roles = "Writer")]
         public async Task<IActionResult> Delete([FromRoute] Guid regionId)
         {
 
